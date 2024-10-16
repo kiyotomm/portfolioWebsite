@@ -1,5 +1,6 @@
 import { Box, HStack, Text, Image } from "@chakra-ui/react";
 import image from "../Photos/IMG_2211.jpg";
+import { TextGenerateEffectDemo } from "./aceternityUI/TextGenerateEffect/TextGenerateEffectComponent";
 
 const HomePage = () => {
   return (
@@ -7,8 +8,8 @@ const HomePage = () => {
       <Box boxSize="sm">
         <Image src={image} borderRadius="5vh" />
       </Box>
-      <Box>
-        <Text fontSize="2xl">
+      <Box bg="red" width="15vh">
+        {/* <Text fontSize="2xl">
           Hello! I'm <Text as="b">Tom</Text> I'm a passionate web developer with
           a focus on <br />
           <Text as="u">React and TypeScript</Text>, creating sleek, interactive
@@ -16,7 +17,8 @@ const HomePage = () => {
           applications. I enjoy crafting intuitive user experiences and solving
           <br />
           challenges through clean code.
-        </Text>
+        </Text> */}
+        <TextGenerateEffectDemo />
       </Box>
     </HStack>
   );
