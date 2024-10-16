@@ -2,13 +2,15 @@
 
 import { Outlet } from "react-router-dom";
 import NavBar from "./NavBar";
-import { Box, VStack } from "@chakra-ui/react";
+import { Box, Show, VStack } from "@chakra-ui/react";
 
 const Layout = () => {
   return (
     <VStack>
       <Box mt="2vh">
-        <NavBar />
+        <Show above="sm">
+          <NavBar />
+        </Show>
       </Box>
       <div className="main">
         <Outlet />

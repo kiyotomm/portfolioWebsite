@@ -4,11 +4,16 @@ import { TextGenerateEffectDemo } from "./aceternityUI/TextGenerateEffect/TextGe
 
 const HomePage = () => {
   return (
-    <HStack gap="7vh">
-      <Box boxSize="sm">
-        <Image src={image} borderRadius="5vh" />
+    <HStack gap="7vh" flexWrap="wrap" justifyContent="center">
+      <Box>
+        <Image
+          src={image}
+          borderRadius="5vh"
+          boxSize={{ base: "300px", sm: "500px" }}
+          objectFit="cover"
+        />
       </Box>
-      <Box bg="red" width="15vh">
+      <Box width="25vh">
         {/* <Text fontSize="2xl">
           Hello! I'm <Text as="b">Tom</Text> I'm a passionate web developer with
           a focus on <br />
@@ -18,7 +23,9 @@ const HomePage = () => {
           <br />
           challenges through clean code.
         </Text> */}
-        <TextGenerateEffectDemo />
+        <Text fontSize="3xl">
+          <TextGenerateEffectDemo />
+        </Text>
       </Box>
     </HStack>
   );
