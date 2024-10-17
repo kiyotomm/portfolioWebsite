@@ -31,8 +31,12 @@ const WorksPage = () => {
     <>
       {componentArr.map((arr) => (
         <div className="flex flex-col items-center my-[15vh]" key={arr.id}>
-          <div className="text-3xl self-start ml-[3vh] font-sans  ">
-            <Link href={arr.appLink} isExternal>
+          <div className="text-3xl self-start ml-[3vh] font-sans flex  ">
+            <Link
+              href={arr.appLink}
+              isExternal
+              className="flex gap-[5px] items-center"
+            >
               {arr.appName}
               <ExternalLinkIcon />
             </Link>
