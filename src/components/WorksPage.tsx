@@ -7,32 +7,39 @@ import { StickyScrollRevealStom } from "./aceternityUI/StickScrollReaveal/Sticky
 interface ComponentItem {
   id: number;
   app: JSX.Element;
+  appName: string;
+  appLink: string;
 }
 
 const WorksPage = () => {
-  const arr: ComponentItem[] = [
-    { id: 1, app: <StickyScrollRevealNetImage /> },
-    { id: 2, app: <StickyScrollRevealStom /> },
+  const componentArr: ComponentItem[] = [
+    {
+      id: 1,
+      app: <StickyScrollRevealNetImage />,
+      appName: "netimage",
+      appLink: "https://netimage.vercel.app/",
+    },
+    {
+      id: 2,
+      app: <StickyScrollRevealStom />,
+      appName: "s-tom",
+      appLink: "https://s-tom.vercel.app/",
+    },
   ];
   return (
     // <StyledWrapper>
     <>
-      <div className="flex flex-col items-center my-[15vh]  ">
-        <div className="text-3xl self-start ml-[3vh] font-sans  ">
-          <Link href="https://netimage.vercel.app/" isExternal>
-            netimage <ExternalLinkIcon />
-          </Link>
+      {componentArr.map((arr) => (
+        <div className="flex flex-col items-center my-[15vh]" key={arr.id}>
+          <div className="text-3xl self-start ml-[3vh] font-sans  ">
+            <Link href={arr.appLink} isExternal>
+              {arr.appName}
+              <ExternalLinkIcon />
+            </Link>
+          </div>
+          {arr.app}
         </div>
-        <StickyScrollRevealNetImage />
-      </div>
-      <div className="flex flex-col items-center my-[15vh]  ">
-        <div className="text-3xl self-start ml-[3vh] font-sans  ">
-          <Link href="https://netimage.vercel.app/" isExternal>
-            netimage <ExternalLinkIcon />
-          </Link>
-        </div>
-        <StickyScrollRevealStom />
-      </div>
+      ))}
     </>
     // </StyledWrapper>
   );

@@ -1,8 +1,8 @@
 "use client";
 import { StickyScroll } from "./StickyScrollReveal";
 import image from "../../../Photos/workspage photos/stom/s-tom-ss-1.png";
-import image2 from "../../../Photos/workspage photos/netimage/netimage-ss.jpg";
-import image3 from "../../../Photos/workspage photos/netimage/netimage-ss-light.jpg.png";
+import image2 from "../../../Photos/workspage photos/stom/s-tom-ss-2.png";
+import image3 from "../../../Photos/workspage photos/stom/s-tom-ss-3.png";
 
 const content = [
   {
