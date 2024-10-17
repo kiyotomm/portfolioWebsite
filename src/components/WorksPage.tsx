@@ -1,12 +1,12 @@
-import { StickyScrollRevealDemo } from "./aceternityUI/StickScrollReaveal/StickyScrollRevealComponent";
+import { StickyScrollRevealNetImage } from "./aceternityUI/StickScrollReaveal/StickyScrollRevealComponent";
 // import styled from "styled-components";
 
 const WorksPage = () => {
   return (
     // <StyledWrapper>
-    <div className="flex flex-col items-center ">
+    <div className="flex flex-col items-center bg-red-900 ">
       <div className="text-3xl self-start">netimage</div>
-      <StickyScrollRevealDemo />
+      <StickyScrollRevealNetImage />
     </div>
     // </StyledWrapper>
   );

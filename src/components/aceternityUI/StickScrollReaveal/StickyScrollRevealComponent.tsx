@@ -1,56 +1,60 @@
 "use client";
 import { StickyScroll } from "./StickyScrollReveal";
 import image from "../../../Photos/workspage photos/netimage/netimage-ss-desktop-size.png";
+import image2 from "../../../Photos/workspage photos/netimage/netimage-ss.jpg";
+import image3 from "../../../Photos/workspage photos/netimage/netimage-ss-light.jpg.png";
 
 const content = [
   {
-    title: "Powerful Image Search",
+    title: "Image Search",
     description:
       "Find the perfect image effortlessly. With advanced search algorithms, quickly discover the photos you need from a vast collection. Search by keywords, categories, or upload your own image for reverse search. No more endless scrolling—just instant results.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        <img src={image} className="w-screen h-full object-cover" />
+        <img
+          src={image}
+          className="w-screen h-full object-cover"
+          alt="netimage "
+        />
       </div>
     ),
   },
   {
-    title: "Real time changes",
+    title: "What I Struggled With: Displaying and Mapping Data",
     description:
-      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+      "Getting the data to show up on the screen was tougher than I expected. At first, I struggled to fetch the data properly and then figuring out how to map over it was confusing. Some parts wouldn’t render the way I wanted, and I had to debug a lot to understand why the data wasn’t displaying correctly.",
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <img
-          src="/linear.webp"
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
+          src={image2}
+          className="w-screen h-full object-cover"
           alt="linear board demo"
         />
       </div>
     ),
   },
   {
-    title: "Version control",
-    description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+    title: "Improving Routes and User Experience",
+    description: `
+    One of the next things I want to work on is adding routes to make navigation smoother. 
+    I plan to organize the pages better so users can easily find what they’re looking for. 
+    I also want to enhance the overall experience by making everything feel more intuitive and responsive.
+
+    This means working on loading indicators, better error handling, and adding small touches 
+    that make the app more enjoyable to use. The goal is to make sure users have a smooth, hassle-free experience.
+  `,
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-        Version control
-      </div>
-    ),
-  },
-  {
-    title: "Running out of content",
-    description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-    content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Running out of content
+        <img
+          src={image3}
+          className="w-screen h-full object-cover"
+          alt="linear board demo"
+        />
       </div>
     ),
   },
 ];
-export function StickyScrollRevealDemo() {
+export function StickyScrollRevealNetImage() {
   return (
     <div className="p-10">
       <StickyScroll content={content} />
