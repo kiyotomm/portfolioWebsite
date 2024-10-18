@@ -7,11 +7,23 @@ const {
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{ts,tsx}"],
+  content: ["./src/**/*.{ts,tsx}"], // Ensure these paths match your project
   darkMode: "class", // Enables class-based dark mode
   theme: {
     extend: {
-      // Add any custom theme extensions here if needed
+      animation: {
+        aurora: "aurora 60s linear infinite",
+      },
+      keyframes: {
+        aurora: {
+          from: {
+            backgroundPosition: "50% 50%, 50% 50%",
+          },
+          to: {
+            backgroundPosition: "350% 50%, 350% 50%",
+          },
+        },
+      },
     },
   },
   plugins: [
@@ -45,7 +57,7 @@ module.exports = {
 };
 
 /**
- * This plugin adds each Tailwind color as a global CSS variable, e.g., var(--gray-200).
+ * Plugin to create CSS variables for each Tailwind color, e.g., var(--gray-200).
  */
 function addVariablesForColors({ addBase, theme }) {
   const allColors = flattenColorPalette(theme("colors"));
