@@ -70,14 +70,14 @@ const Works = () => {
             key={arr.id}
           >
             <div className="text-3xl self-start ml-[3vh] font-sans flex z-10 ">
-              <a
+              <Link
                 href={arr.appLink}
-                target="_blank"
+                isExternal
                 className="flex gap-[5px] items-center"
               >
                 {arr.appName}
                 <ExternalLinkIcon />
-              </a>
+              </Link>
             </div>
             {arr.app}
           </div>
