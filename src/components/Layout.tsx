@@ -3,8 +3,6 @@
 import { Outlet, useLocation } from "react-router-dom";
 import NavBar from "./NavBar";
 import { Box, Show, VStack } from "@chakra-ui/react";
-import { AuroraBackground } from "./aceternityUI/AuroraBackgoround/AuroraBackground";
-
 const Layout = () => {
   const location = useLocation();
   // const isWorksPage = location.pathname === "/worksPage";
