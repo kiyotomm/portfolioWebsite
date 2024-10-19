@@ -7,37 +7,41 @@ import { AuroraBackground } from "./aceternityUI/AuroraBackgoround/AuroraBackgro
 
 const Layout = () => {
   const location = useLocation();
-  const isWorksPage = location.pathname === "/worksPage";
-  const Wrapper = ({ children }: { children: React.ReactNode }) => {
-    if (isWorksPage) {
-      return (
-        <AuroraBackground className="h-full min-w-[99.3vw] ">
-          {children}
-        </AuroraBackground>
-      );
-    }
-    return <>{children}</>;
-  };
+  // const isWorksPage = location.pathname === "/worksPage";
+  // const Wrapper = ({ children }: { children: React.ReactNode }) => {
+  //   if (isWorksPage) {
+  //     return (
+  //       <AuroraBackground className="h-full min-w-[99.3vw] ">
+  //         {children}
+  //       </AuroraBackground>
+  //     );
+  //   }
+  //   return <>{children}</>;
+  // };
   return (
-    <VStack bg={location.pathname === "/worksPage" ? "#2c5282" : ""} gap="0">
-      <Wrapper>
-        <Box
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-          mt="2vh"
-          // bg={location.pathname === "/worksPage" ? "black" : ""}
-          width="100%"
-        >
-          <Show above="sm">
-            <NavBar />
-          </Show>
-        </Box>
-      </Wrapper>
+    <VStack
+      bg={location.pathname === "/worksPage" ? "black" : ""}
+      gap="0"
+      color={location.pathname === "/worksPage" ? "white" : ""}
+    >
+      {/* <Wrapper> */}
+      <Box
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        mt="2vh"
+        // bg={location.pathname === "/worksPage" ? "black" : ""}
+        width="100%"
+      >
+        <Show above="sm">
+          <NavBar />
+        </Show>
+      </Box>
+      {/* </Wrapper> */}
 
-      <div className="main">
+      <Box className="main">
         <Outlet />
-      </div>
+      </Box>
     </VStack>
   );
 };
