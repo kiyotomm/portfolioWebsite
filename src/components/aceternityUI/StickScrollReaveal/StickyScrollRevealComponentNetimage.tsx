@@ -53,6 +53,25 @@ const content = [
       </div>
     ),
   },
+  {
+    title: "",
+    description: "Typescript, Javascript, Chakra UI, Unsplash API",
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
+        {/* <img
+          src={image3}
+          className="w-screen h-full object-cover"
+          alt="linear board demo"
+        /> */}
+        <a
+          href="https://www.flaticon.com/free-icons/typescript"
+          title="typescript icons"
+        >
+          Typescript icons created by Freepik - Flaticon
+        </a>
+      </div>
+    ),
+  },
 ];
 export function StickyScrollRevealNetImage() {
   return (

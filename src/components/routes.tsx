@@ -3,6 +3,7 @@ import ErrorPage from "./ErrorPage";
 import HomePage from "./HomePage";
 import Layout from "./Layout";
 import WorksPage from "./WorksPage";
+import AboutMePage from "./AboutMePage";
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <HomePage /> },
       { path: "worksPage", element: <WorksPage /> },
+      { path: "aboutMePage", element: <AboutMePage /> },
     ],
   },
 ]);
