@@ -2,8 +2,6 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Link } from "@chakra-ui/react";
 import { StickyScrollRevealNetImage } from "./aceternityUI/StickScrollReaveal/StickyScrollRevealComponentNetimage";
 import { StickyScrollRevealStom } from "./aceternityUI/StickScrollReaveal/StickyScrollRevealComponentStom";
-import { AuroraBackground } from "./aceternityUI/AuroraBackgoround/AuroraBackground";
-import { motion } from "framer-motion";
 import { SparklesCore } from "./aceternityUI/Sparkles/SparklesBg";
 // import styled from "styled-components";
 
@@ -43,7 +41,7 @@ const Works = () => {
       </div>
       {componentArr.map((arr) => (
         <div
-          className="flex flex-col items-center my-[15vh] text-white "
+          className="flex flex-col items-center my-[15vh] text-white  "
           key={arr.id}
         >
           <div className="text-3xl self-start ml-[3vh] font-sans flex z-10 ">

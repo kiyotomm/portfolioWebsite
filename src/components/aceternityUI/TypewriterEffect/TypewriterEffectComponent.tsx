@@ -6,11 +6,9 @@ export function TypewriterEffectSmoothDemo() {
       text: "Hello",
     },
     {
-      text: "World,",
+      text: "World, I'm",
     },
-    {
-      text: "I'm",
-    },
+
     {
       text: "Tom!",
       className: "text-blue-500 dark:text-blue-500",

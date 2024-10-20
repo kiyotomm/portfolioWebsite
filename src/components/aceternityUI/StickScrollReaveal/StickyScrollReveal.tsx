@@ -41,9 +41,19 @@ export const StickyScroll = ({
   });
 
   const backgroundColors = [
-    "var(--slate-900)",
-    "var(--black)",
-    "var(--neutral-900)",
+    // "var(--slate-900)",
+    // "white",
+    `        <SparklesCore
+          id="tsparticlesfullpage"
+          background="transparent"
+          minSize={0.6}
+          maxSize={1.4}
+          particleDensity={100}
+          className="w-full h-full"
+          particleColor="#FFFFFF"
+        />`,
+    // "bg-opacity-0",
+    // "var(--neutral-900)",
   ];
   const linearGradients = [
     "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))",
@@ -87,7 +97,7 @@ export const StickyScroll = ({
                   opacity: 0,
                 }}
                 animate={{
-                  opacity: activeCard === index ? 1 : 0.3,
+                  opacity: activeCard === index ? 1 : 0.16,
                 }}
                 className="text-kg text-slate-300 max-w-sm mt-10"
               >
@@ -101,7 +111,7 @@ export const StickyScroll = ({
       <div
         style={{ background: backgroundGradient }}
         className={cn(
-          "hidden lg:block h-60 w-80 rounded-md bg-white sticky top-10 overflow-hidden",
+          "hidden lg:block h-60 w-80 rounded-md bg-white sticky top-10 overflow-hidden ",
           contentClassName
         )}
       >

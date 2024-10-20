@@ -1,10 +1,15 @@
-import { TypewriterEffectSmoothDemo } from "./aceternityUI/TypewriterEffect/TypewriterEffectComponent";
+// import { TypewriterEffectSmoothDemo } from "./aceternityUI/TypewriterEffect/TypewriterEffectComponent";
+
+import { HeroHighlightDemo } from "./aceternityUI/HeroHighlight/HeroHighlightComponent";
 
 const AboutMePage = () => {
   return (
     <div className="flex flex-col gap-[10vh]">
       <div className="flex flex-row gap-[5vh] flex-wrap justify-center">
-        <TypewriterEffectSmoothDemo />
+        {/* <TypewriterEffectSmoothDemo /> */}
+        <div className="text-3xl font-bold flex items-center ">
+          Hello World I'm <span className="text-purple-600"> Tom</span>.
+        </div>
         <div className="flex items-center px-[3vh]">
           <p className="text-lg font-medium">
             Hi, I’m Tom! currently learning software engineering <br />
@@ -19,9 +24,11 @@ const AboutMePage = () => {
           </p>
         </div>
       </div>
-      <div>
+      <div className="">
         <p className="text-3xl font-serif">My tech stack</p>
-        <div></div>
+        <div className=" ">
+          <HeroHighlightDemo />
+        </div>
       </div>
     </div>
   );
