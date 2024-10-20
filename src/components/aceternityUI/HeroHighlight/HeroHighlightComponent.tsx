@@ -26,7 +26,7 @@ export function HeroHighlightDemo() {
     php,
   ];
   return (
-    <HeroHighlight>
+    <HeroHighlight className="flex">
       <motion.h1
         initial={{
           opacity: 0,
@@ -42,13 +42,13 @@ export function HeroHighlightDemo() {
         }}
         className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white  leading-relaxed lg:leading-snug text-center mx-auto "
       >
-        <div className="flex flex-wrap flex-row w-[30vh] gap-[1vh]">
+        <div className="flex flex-wrap flex-row max-w-[30vh] gap-[1vh] justify-center items-center">
           {imageArr.map((image, ind) => (
-            <img src={image} key={ind} width="50px" />
+            <img src={image} key={ind} width="60vh" />
           ))}
         </div>
         <Highlight className="text-black dark:text-white">
-          copy, of a copy, of a copy.
+          My tech stack
         </Highlight>
       </motion.h1>
     </HeroHighlight>
