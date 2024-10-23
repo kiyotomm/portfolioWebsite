@@ -29,26 +29,29 @@ const Works = () => {
   ];
 
   return (
-    <div className="relative min-w-[99.3vw] bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
-      <div className="w-screen absolute inset-0 h-full">
-        <SparklesCore
-          id="tsparticlesfullpage"
-          background="transparent"
-          particleDensity={100}
-          className="w-full h-full"
-          particleColor="#FFFFFF"
-        />
-      </div>
+    // <div className="relative min-w-[99.3vw] bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
+    //   <div className="w-screen absolute inset-0 h-full">
+    //     <SparklesCore
+    //       id="tsparticlesfullpage"
+    //       background="transparent"
+    //       particleDensity={100}
+    //       className="w-full h-full"
+    //       particleColor="#FFFFFF"
+    //     />
+    //   </div>
+    <div className="h-full w-screen dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative ">
+      {/* Radial gradient for the container to give a faded look */}
+      <div className="absolute pointer-events-none inset-0   dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       {componentArr.map((arr) => (
         <div
-          className="flex flex-col items-center my-[15vh] text-white  "
+          className="flex flex-col items-center my-[15vh] text-white  z-50"
           key={arr.id}
         >
-          <div className="text-3xl self-start ml-[3vh] font-sans flex z-10 ">
+          <div className="text-3xl self-start ml-[3vh] font-sans flex z-20 color-black  ">
             <Link
               href={arr.appLink}
               isExternal
-              className="flex gap-[5px] items-center"
+              className="flex gap-[5px] items-center z-50"
             >
               {arr.appName}
               <ExternalLinkIcon />
@@ -58,6 +61,8 @@ const Works = () => {
         </div>
       ))}
     </div>
+    // </div>
+
     // // <StyledWrapper>
     //   <AuroraBackground className="h-full min-w-[99.3vw] ">
     //     <motion.div

@@ -42,17 +42,7 @@ export const StickyScroll = ({
 
   const backgroundColors = [
     // "var(--slate-900)",
-    // "white",
-    `        <SparklesCore
-          id="tsparticlesfullpage"
-          background="transparent"
-          minSize={0.6}
-          maxSize={1.4}
-          particleDensity={100}
-          className="w-full h-full"
-          particleColor="#FFFFFF"
-        />`,
-    // "bg-opacity-0",
+    "black",
     // "var(--neutral-900)",
   ];
   const linearGradients = [
@@ -74,7 +64,7 @@ export const StickyScroll = ({
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
-      className="h-[30rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10"
+      className="h-[30rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10 "
       ref={ref}
     >
       <div className="div relative flex items-start px-4">

@@ -18,9 +18,9 @@ const Layout = () => {
   // };
   return (
     <VStack
-      bg={location.pathname === "/worksPage" ? "black" : ""}
+      // bg={location.pathname === "/worksPage" ? "black" : ""}
       gap="0"
-      color={location.pathname === "/worksPage" ? "white" : ""}
+      // color={location.pathname === "/worksPage" ? "white" : ""}
     >
       {/* <Wrapper> */}
       <Box

@@ -40,10 +40,11 @@ const NavBar = () => {
                   key={item.id}
                   _selected={{
                     fontWeight: "bold",
-                    borderBottom:
-                      location.pathname === "/worksPage"
-                        ? "2px solid white"
-                        : "2px solid black",
+                    borderBottom: "2px solid black",
+                    // borderBottom:
+                    //   location.pathname === "/worksPage"
+                    //     ? "2px solid white"
+                    //     : "2px solid black",
                   }}
                 >
                   <Text fontSize="2xl">{item.page}</Text>
