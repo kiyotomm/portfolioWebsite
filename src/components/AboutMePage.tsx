@@ -11,6 +11,9 @@ import tailwind from "../Photos/techStackPhotos/Tailwind CSS.png";
 import html from "../Photos/techStackPhotos/HTML5.png";
 import java from "../Photos/techStackPhotos/Java.png";
 import php from "../Photos/techStackPhotos/PHP.png";
+import { IconCloudDemo } from "./MagicUI/InteractiveIconCloudComponent";
+import { WordFadeInDemo } from "./MagicUI/WordFadeInComponent";
+import { WordRotateDemo } from "./MagicUI/WordRotateComponent";
 
 const AboutMePage = () => {
   const imageArr = [
@@ -27,13 +30,14 @@ const AboutMePage = () => {
   ];
   return (
     <div className="flex flex-col gap-[10vh] items-center mt-[15vh]  ">
-      <div className="flex flex-row gap-[5vh] flex-wrap justify-center">
+      <div className="flex flex-row gap-[5vh] flex-wrap justify-center ">
         {/* <TypewriterEffectSmoothDemo /> */}
-        <div className="text-3xl font-bold flex items-center ">
-          Hello World I'm <span className="text-purple-600"> Tom</span>.
+        <div className="text-3xl font-bold flex flex-col items-center gap-2 ">
+          <p>Hello World I'm </p>
+          <WordRotateDemo />
         </div>
-        <div className="flex items-center px-[3vh]">
-          <p className="text-lg font-medium">
+        <div className="flex flex-wrap items-center px-[3vh] ">
+          {/* <p className="text-lg font-medium">
             Hi, I’m Tom! currently learning software engineering <br />
             with a focus on web development.. I enjoy working on creative <br />
             projects. Right now, I’m <br />
@@ -42,17 +46,19 @@ const AboutMePage = () => {
             <br />
             find me Driving a car. Feel free to reach out if you’d like to
             connect!
-          </p>
+          </p> */}
+          <WordFadeInDemo />
         </div>
       </div>
       <div className="flex justify-around  w-full items-center font-serif my-[11vh]">
         <div className="text-3xl font-bold">My tech stack</div>
         {/* <HeroHighlightDemo /> */}
-        <div className="flex flex-wrap flex-row max-w-[30vh] gap-[1vh] justify-center items-center">
+        {/* <div className="flex flex-wrap flex-row max-w-[30vh] gap-[1vh] justify-center items-center">
           {imageArr.map((image, ind) => (
             <img src={image} key={ind} width="60vh" />
           ))}
-        </div>
+        </div> */}
+        <IconCloudDemo />
       </div>
     </div>
   );
