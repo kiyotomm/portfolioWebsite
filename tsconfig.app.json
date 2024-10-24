@@ -18,7 +18,14 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Path mapping - Added */
+    "baseUrl": ".", // <-- Added from Magic ui
+    "paths": {
+      // <-- Added from Magic ui
+      "@/*": ["./src/*"] // <-- Added from Magic ui
+    }
   },
   "include": ["src"]
 }
