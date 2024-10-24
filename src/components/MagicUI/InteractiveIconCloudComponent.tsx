@@ -1,5 +1,5 @@
 import { IconCloud } from "./InteractiveIconCloud";
-
+import bootstrap from "../../Photos/techStackPhotos/Bootstrap.png";
 const slugs = [
   "typescript",
   "javascript",
@@ -13,6 +13,9 @@ const slugs = [
   "tailwind",
   "chakra",
   "php",
+  "chakraui",
+  "tailwindcss",
+  "bootstrap",
 ];
 
 export function IconCloudDemo() {

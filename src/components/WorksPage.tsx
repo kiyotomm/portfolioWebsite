@@ -39,7 +39,7 @@ const Works = () => {
     //       particleColor="#FFFFFF"
     //     />
     //   </div>
-    <div className="h-[100vh] w-screen dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative ">
+    <div className="h-full w-[99vw] dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative ">
       {/* Radial gradient for the container to give a faded look */}
       <div className="absolute pointer-events-none inset-0   dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       {componentArr.map((arr) => (

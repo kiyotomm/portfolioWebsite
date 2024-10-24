@@ -2,31 +2,31 @@
 
 import { HeroHighlightDemo } from "./aceternityUI/HeroHighlight/HeroHighlightComponent";
 import bootstrap from "../Photos/techStackPhotos/Bootstrap.png";
-import react from "../Photos/techStackPhotos/React.png";
-import ts from "../Photos/techStackPhotos/typescript.png";
-import css from "../Photos/techStackPhotos/CSS3.png";
+// import react from "../Photos/techStackPhotos/React.png";
+// import ts from "../Photos/techStackPhotos/typescript.png";
+// import css from "../Photos/techStackPhotos/CSS3.png";
 import chakra from "../Photos/techStackPhotos/Chakra UI.png";
-import js from "../Photos/techStackPhotos/js_5968292.png";
+// import js from "../Photos/techStackPhotos/js_5968292.png";
 import tailwind from "../Photos/techStackPhotos/Tailwind CSS.png";
-import html from "../Photos/techStackPhotos/HTML5.png";
-import java from "../Photos/techStackPhotos/Java.png";
-import php from "../Photos/techStackPhotos/PHP.png";
+// import html from "../Photos/techStackPhotos/HTML5.png";
+// import java from "../Photos/techStackPhotos/Java.png";
+// import php from "../Photos/techStackPhotos/PHP.png";
 import { IconCloudDemo } from "./MagicUI/InteractiveIconCloudComponent";
 import { WordFadeInDemo } from "./MagicUI/WordFadeInComponent";
 import { WordRotateDemo } from "./MagicUI/WordRotateComponent";
 
 const AboutMePage = () => {
   const imageArr = [
-    html,
-    css,
-    js,
-    ts,
-    react,
+    // html,
+    // css,
+    // js,
+    // ts,
+    // react,
     chakra,
     bootstrap,
     tailwind,
-    java,
-    php,
+    // java,
+    // php,
   ];
   return (
     <div className="flex flex-col gap-[10vh] items-center mt-[15vh]  ">
@@ -50,14 +50,15 @@ const AboutMePage = () => {
           <WordFadeInDemo />
         </div>
       </div>
-      <div className="flex justify-around  w-full items-center font-serif my-[11vh]">
+      <div className="flex  w-full justify-around items-center font-serif my-[11vh] gap-5">
         <div className="text-3xl font-bold">My tech stack</div>
         {/* <HeroHighlightDemo /> */}
-        {/* <div className="flex flex-wrap flex-row max-w-[30vh] gap-[1vh] justify-center items-center">
-          {imageArr.map((image, ind) => (
-            <img src={image} key={ind} width="60vh" />
-          ))}
-        </div> */}
+        {/* <div className="flex gap-6">
+          <div className="flex flex-wrap flex-row max-w-[30vh] gap-[1vh] justify-center items-center">
+            {imageArr.map((image, ind) => (
+              <img src={image} key={ind} width="60vh" />
+            ))} */}
+        {/* </div> */}
         <IconCloudDemo />
       </div>
     </div>
