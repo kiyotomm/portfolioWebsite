@@ -58,7 +58,7 @@ const content = [
     ),
   },
   {
-    title: " React, TypeScript,, Chakra UI and RAWG API",
+    title: " React, TypeScript, Chakra UI and RAWG API",
     description: "",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--blue-500),var(--cyan-500))] flex items-center justify-center text-white">

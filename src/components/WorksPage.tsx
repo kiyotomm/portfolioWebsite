@@ -39,20 +39,19 @@ const Works = () => {
     //       particleColor="#FFFFFF"
     //     />
     //   </div>
-    <div className="h-full w-screen dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative ">
+    <div className="h-[100vh] w-screen dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative ">
       {/* Radial gradient for the container to give a faded look */}
       <div className="absolute pointer-events-none inset-0   dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       {componentArr.map((arr) => (
         <div
-          className="flex flex-col items-center my-[15vh] text-white  z-50"
+          className="flex flex-col items-center my-[15vh] text-white    "
           key={arr.id}
         >
-          <div className="text-3xl self-start ml-[3vh] font-sans flex z-20 color-black  ">
-            <Link
-              href={arr.appLink}
-              isExternal
-              className="flex gap-[5px] items-center z-50"
-            >
+          <div
+            className="text-3xl  ml-[3vh] font-sans flex z-50 color-black "
+            id="worksPageLink"
+          >
+            <Link href={arr.appLink} isExternal className="self-start">
               {arr.appName}
               <ExternalLinkIcon />
             </Link>
