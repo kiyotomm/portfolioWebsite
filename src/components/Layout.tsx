@@ -2,7 +2,7 @@
 
 import { Outlet, useLocation } from "react-router-dom";
 import NavBar from "./NavBar";
-import { Box, Show, VStack } from "@chakra-ui/react";
+import { Box, VStack } from "@chakra-ui/react";
 const Layout = () => {
   const location = useLocation();
   // const isWorksPage = location.pathname === "/worksPage";
@@ -31,9 +31,7 @@ const Layout = () => {
         // bg={location.pathname === "/worksPage" ? "black" : ""}
         width="100%"
       >
-        <Show above="sm">
-          <NavBar />
-        </Show>
+        <NavBar />
       </Box>
       {/* </Wrapper> */}
 
