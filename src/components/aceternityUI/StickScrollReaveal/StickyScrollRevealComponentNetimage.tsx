@@ -20,11 +20,11 @@ const content = [
     ),
   },
   {
-    title: "What I Struggled With: Displaying and Mapping Data",
+    title: "What I Struggled With: Using TanStack Query for the First Time",
     description:
-      "Getting the data to show up on the screen was tougher than I expected. At first, I struggled to fetch the data properly and then figuring out how to map over it was confusing. Some parts wouldn’t render the way I wanted, and I had to debug a lot to understand why the data wasn’t displaying correctly.",
+      "Using TanStack Query in my project was more challenging than I had expected. Since it was my first time working with it, I found fetching and displaying data confusing. I struggled with understanding how to properly configure queries and manage the loading and error states. Debugging why the data wasn’t rendering smoothly took some time, but the experience helped me learn a lot about asynchronous data handling in React.",
     content: (
-      <div className="h-full w-full  flex items-center justify-center text-white">
+      <div className="h-full w-full flex items-center justify-center text-white">
         <img
           src={image2}
           className="w-screen h-full object-cover"
