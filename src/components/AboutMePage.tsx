@@ -27,10 +27,11 @@ const AboutMePage = () => {
         </div>
         <div className="flex flex-wrap items-center px-[3vh] ">
           <p className="text-lg font-medium">
-            Hi, currently learning software engineering <br />
-            with a focus on web development.. I enjoy working on creative <br />
-            projects. Right now, I’m <br />
-            focused on learning java, and working toward my goal <br />
+            Hi, I am currently learning software engineering <br />
+            with a focus on web development.. I enjoy working on creative
+            projects. <br />
+            Right now, I’m focused on learning java, and working towards my goal{" "}
+            <br />
             of becoming a Full-Stack Developer. When I’m not studying, you can{" "}
             find me Driving a car. <br />
             Feel free to reach out if you’d like to{"  "}
