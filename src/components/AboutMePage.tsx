@@ -16,6 +16,7 @@ import { WordFadeInDemo } from "./MagicUI/WordFadeInComponent";
 import { WordRotateDemo } from "./MagicUI/WordRotateComponent";
 import FlickeringGrid from "./ui/flickering-grid";
 import { GradualSpacingDemo } from "./MagicUI/GradualSpacingComponent";
+import { Link } from "react-router-dom";
 
 const AboutMePage = () => {
   return (
@@ -28,14 +29,16 @@ const AboutMePage = () => {
         </div>
         <div className="flex flex-wrap items-center px-[3vh] ">
           <p className="text-lg font-medium">
-            Hi, I’m Tom! currently learning software engineering <br />
+            Hi, currently learning software engineering <br />
             with a focus on web development.. I enjoy working on creative <br />
             projects. Right now, I’m <br />
             focused on learning java, and working toward my goal <br />
             of becoming a Full-Stack Developer. When I’m not studying, you can{" "}
-            <br />
-            find me Driving a car. Feel free to reach out if you’d like to
-            connect!
+            find me Driving a car. <br />
+            Feel free to reach out if you’d like to{"  "}
+            <Link to="/contactPage" className="underline text-blue-700">
+              connect!
+            </Link>
           </p>
           {/* <WordFadeInDemo /> */}
         </div>
