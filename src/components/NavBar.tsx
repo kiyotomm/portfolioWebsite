@@ -5,9 +5,10 @@ const NavBar = () => {
   const location = useLocation();
 
   const navItems = [
-    { page: "Home", pageLink: "/", id: 1 },
-    { page: "Works", pageLink: "/worksPage", id: 2 },
-    { page: "About Me", pageLink: "/aboutMePage", id: 3 },
+    { displayName: "Home", pageLink: "/", id: 1 },
+    { displayName: "Works", pageLink: "/worksPage", id: 2 },
+    { displayName: "About Me", pageLink: "/aboutMePage", id: 3 },
+    { displayName: "Contact", pageLink: "/ContactPage", id: 4 },
   ];
 
   return (
@@ -47,7 +48,7 @@ const NavBar = () => {
                     //     : "2px solid black",
                   }}
                 >
-                  <Text fontSize="2xl">{item.page}</Text>
+                  <Text fontSize="2xl">{item.displayName}</Text>
                 </Tab>
               </Link>
             ))}
