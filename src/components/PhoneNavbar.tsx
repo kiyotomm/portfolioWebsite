@@ -43,7 +43,12 @@ function PhoneNavbar() {
               </Text>
             </Link>
           </DrawerHeader>
-          <DrawerBody>
+          <DrawerBody
+            display="flex"
+            flexDirection="column"
+            gap="1.5vh"
+            fontSize="2xl"
+          >
             {navItems.map((item) => (
               <Link to={item.pageLink} onClick={onClose} className="underline">
                 <Text key={item.id}>{item.displayName}</Text>
