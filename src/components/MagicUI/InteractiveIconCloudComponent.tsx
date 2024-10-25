@@ -1,5 +1,4 @@
 import { IconCloud } from "./InteractiveIconCloud";
-import bootstrap from "../../Photos/techStackPhotos/Bootstrap.png";
 const slugs = [
   "typescript",
   "javascript",

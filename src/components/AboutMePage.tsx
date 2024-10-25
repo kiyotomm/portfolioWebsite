@@ -1,13 +1,13 @@
 // import { TypewriterEffectSmoothDemo } from "./aceternityUI/TypewriterEffect/TypewriterEffectComponent";
 
 import { HeroHighlightDemo } from "./aceternityUI/HeroHighlight/HeroHighlightComponent";
-import bootstrap from "../Photos/techStackPhotos/Bootstrap.png";
+// import bootstrap from "../Photos/techStackPhotos/Bootstrap.png";
 // import react from "../Photos/techStackPhotos/React.png";
 // import ts from "../Photos/techStackPhotos/typescript.png";
 // import css from "../Photos/techStackPhotos/CSS3.png";
-import chakra from "../Photos/techStackPhotos/Chakra UI.png";
+// import chakra from "../Photos/techStackPhotos/Chakra UI.png";
 // import js from "../Photos/techStackPhotos/js_5968292.png";
-import tailwind from "../Photos/techStackPhotos/Tailwind CSS.png";
+// import tailwind from "../Photos/techStackPhotos/Tailwind CSS.png";
 // import html from "../Photos/techStackPhotos/HTML5.png";
 // import java from "../Photos/techStackPhotos/Java.png";
 // import php from "../Photos/techStackPhotos/PHP.png";
@@ -18,18 +18,6 @@ import FlickeringGrid from "./ui/flickering-grid";
 import { GradualSpacingDemo } from "./MagicUI/GradualSpacingComponent";
 
 const AboutMePage = () => {
-  const imageArr = [
-    // html,
-    // css,
-    // js,
-    // ts,
-    // react,
-    chakra,
-    bootstrap,
-    tailwind,
-    // java,
-    // php,
-  ];
   return (
     <div className="flex flex-col gap-[25vh] items-center mt-[15vh]  ">
       <div className="flex flex-row gap-[5vh] flex-wrap justify-center ">
@@ -39,7 +27,7 @@ const AboutMePage = () => {
           <WordRotateDemo />
         </div>
         <div className="flex flex-wrap items-center px-[3vh] ">
-          {/* <p className="text-lg font-medium">
+          <p className="text-lg font-medium">
             Hi, I’m Tom! currently learning software engineering <br />
             with a focus on web development.. I enjoy working on creative <br />
             projects. Right now, I’m <br />
@@ -48,8 +36,8 @@ const AboutMePage = () => {
             <br />
             find me Driving a car. Feel free to reach out if you’d like to
             connect!
-          </p> */}
-          <WordFadeInDemo />
+          </p>
+          {/* <WordFadeInDemo /> */}
         </div>
       </div>
       {/* <div className="flex  w-full justify-around items-center font-serif my-[11vh] gap-5"> */}
@@ -63,7 +51,7 @@ const AboutMePage = () => {
       {/* </div> */}
       {/* <IconCloudDemo /> */}
       {/* </div> */}
-      <div className="relative h-[500px] rounded-lg w-full bg-background overflow-hidden border flex items-center mb-10">
+      <div className="relative h-[500px] rounded-lg w-screen bg-background overflow-hidden border flex items-center mb-10">
         <FlickeringGrid
           className="z-0 absolute inset-0 size-full w-screen flex items-center"
           squareSize={4}
