@@ -1,6 +1,5 @@
 // import { TypewriterEffectSmoothDemo } from "./aceternityUI/TypewriterEffect/TypewriterEffectComponent";
 
-import { HeroHighlightDemo } from "./aceternityUI/HeroHighlight/HeroHighlightComponent";
 // import bootstrap from "../Photos/techStackPhotos/Bootstrap.png";
 // import react from "../Photos/techStackPhotos/React.png";
 // import ts from "../Photos/techStackPhotos/typescript.png";
@@ -12,7 +11,6 @@ import { HeroHighlightDemo } from "./aceternityUI/HeroHighlight/HeroHighlightCom
 // import java from "../Photos/techStackPhotos/Java.png";
 // import php from "../Photos/techStackPhotos/PHP.png";
 import { IconCloudDemo } from "./MagicUI/InteractiveIconCloudComponent";
-import { WordFadeInDemo } from "./MagicUI/WordFadeInComponent";
 import { WordRotateDemo } from "./MagicUI/WordRotateComponent";
 import FlickeringGrid from "./ui/flickering-grid";
 import { GradualSpacingDemo } from "./MagicUI/GradualSpacingComponent";

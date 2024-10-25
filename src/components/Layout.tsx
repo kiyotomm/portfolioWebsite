@@ -1,10 +1,9 @@
 //this is the App.tsx when using router
 
-import { Outlet, useLocation } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import NavBar from "./NavBar";
 import { Box, VStack } from "@chakra-ui/react";
 const Layout = () => {
-  const location = useLocation();
   // const isWorksPage = location.pathname === "/worksPage";
   // const Wrapper = ({ children }: { children: React.ReactNode }) => {
   //   if (isWorksPage) {

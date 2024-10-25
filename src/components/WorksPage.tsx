@@ -2,7 +2,6 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Link } from "@chakra-ui/react";
 import { StickyScrollRevealNetImage } from "./aceternityUI/StickScrollReaveal/StickyScrollRevealComponentNetimage";
 import { StickyScrollRevealStom } from "./aceternityUI/StickScrollReaveal/StickyScrollRevealComponentStom";
-import { SparklesCore } from "./aceternityUI/Sparkles/SparklesBg";
 // import styled from "styled-components";
 
 interface ComponentItem {

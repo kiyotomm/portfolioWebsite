@@ -12,25 +12,40 @@ import {
 } from "@chakra-ui/react";
 import { navItems } from "./NavBar";
 import { Link } from "react-router-dom";
+import { HamburgerIcon } from "@chakra-ui/icons";
 
 function PhoneNavbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <>
-      <Box bg="red">
-        <Button onClick={onOpen} m={4}>
-          open
-        </Button>
+      <Box>
+        <Box display="flex" justifyContent="space-around" alignItems="center">
+          <Link to="/">
+            <Text fontSize="2xl" fontWeight="bold">
+              Kiyotomm
+            </Text>
+          </Link>
+          <Button onClick={onOpen} m={4}>
+            <HamburgerIcon />
+          </Button>
+        </Box>
       </Box>
       <Drawer onClose={onClose} isOpen={isOpen} placement="left">
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader></DrawerHeader>
+          <DrawerHeader>
+            {" "}
+            <Link to="/">
+              <Text fontSize="2xl" fontWeight="bold">
+                Kiyotomm
+              </Text>
+            </Link>
+          </DrawerHeader>
           <DrawerBody>
             {navItems.map((item) => (
-              <Link to={item.pageLink} onClick={onClose}>
+              <Link to={item.pageLink} onClick={onClose} className="underline">
                 <Text key={item.id}>{item.displayName}</Text>
               </Link>
             ))}
