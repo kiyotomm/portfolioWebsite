@@ -13,9 +13,9 @@ import PhoneNavbar from "./PhoneNavbar";
 
 export const navItems = [
   { displayName: "Home", pageLink: "/", id: 1 },
-  { displayName: "Works", pageLink: "/worksPage", id: 2 },
-  { displayName: "About Me", pageLink: "/aboutMePage", id: 3 },
-  { displayName: "Contact", pageLink: "/ContactPage", id: 4 },
+  { displayName: "Works", pageLink: "/works", id: 2 },
+  { displayName: "About Me", pageLink: "/about-me", id: 3 },
+  { displayName: "Contact", pageLink: "/contact", id: 4 },
 ];
 const NavBar = () => {
   const location = useLocation();
