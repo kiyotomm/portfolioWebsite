@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { Link, useLocation } from "react-router-dom";
 import PhoneNavbar from "./PhoneNavbar";
+import GitHubme from "./GitHubme";
 
 export const navItems = [
   { displayName: "Home", pageLink: "/", id: 1 },
@@ -37,14 +38,21 @@ const NavBar = () => {
               width="100%"
               justifyContent="space-around"
             >
-              <Box alignSelf="flex-start">
+              <Box
+                alignSelf="flex-start"
+                display="flex "
+                gap={10}
+                alignItems="center"
+              >
                 <Link to="/">
                   <Text fontSize="4xl" fontWeight="bold">
                     Kiyotomm
                   </Text>
                 </Link>
+                <GitHubme />
               </Box>
               <HStack gap="7vh">
+                <Box maxWidth="30vw"></Box>
                 {navItems.map((item) => (
                   <Link to={item.pageLink}>
                     <Tab

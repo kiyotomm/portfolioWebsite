@@ -13,6 +13,7 @@ import {
 import { navItems } from "./NavBar";
 import { Link } from "react-router-dom";
 import { HamburgerIcon } from "@chakra-ui/icons";
+import GitHubme from "./GitHubme";
 
 function PhoneNavbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -21,11 +22,14 @@ function PhoneNavbar() {
     <>
       <Box>
         <Box display="flex" justifyContent="space-around" alignItems="center">
-          <Link to="/">
-            <Text fontSize="2xl" fontWeight="bold">
-              Kiyotomm
-            </Text>
-          </Link>
+          <Box display="flex" gap="2">
+            <Link to="/">
+              <Text fontSize="2xl" fontWeight="bold">
+                Kiyotomm
+              </Text>
+            </Link>
+            <GitHubme />
+          </Box>
           <Button onClick={onOpen} m={4}>
             <HamburgerIcon />
           </Button>
@@ -35,13 +39,14 @@ function PhoneNavbar() {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>
+          <DrawerHeader display="flex" gap="3">
             {" "}
             <Link to="/">
               <Text fontSize="2xl" fontWeight="bold">
                 Kiyotomm
               </Text>
             </Link>
+            <GitHubme />
           </DrawerHeader>
           <DrawerBody
             display="flex"
