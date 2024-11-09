@@ -35,7 +35,7 @@ const AboutMePage = () => {
             of becoming a Full-Stack Developer. When I’m not studying, you can{" "}
             find me Driving a car. <br />
             Feel free to reach out if you’d like to{"  "}
-            <Link to="/contactPage" className="underline text-blue-700">
+            <Link to="/contact" className="underline text-blue-700">
               connect!
             </Link>
           </p>
