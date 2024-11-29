@@ -15,10 +15,17 @@ import { WordRotateDemo } from "./MagicUI/WordRotateComponent";
 import FlickeringGrid from "./ui/flickering-grid";
 import { GradualSpacingDemo } from "./MagicUI/GradualSpacingComponent";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const AboutMePage = () => {
   return (
     <div className="flex flex-col gap-[25vh] items-center mt-[15vh]  ">
+      <Helmet>
+        <title>kiyotomm</title>
+        <meta name="description" content="about kiyotomm" />
+        <meta name="robots" content="homepage, react, seo" />
+        <link href="/about-me" />
+      </Helmet>
       <div className="flex flex-row gap-[5vh] flex-wrap justify-center ">
         {/* <TypewriterEffectSmoothDemo /> */}
         <div className="text-3xl font-bold flex flex-col items-center gap-2 ">

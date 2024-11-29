@@ -2,6 +2,7 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Link } from "@chakra-ui/react";
 import { StickyScrollRevealNetImage } from "./aceternityUI/StickScrollReaveal/StickyScrollRevealComponentNetimage";
 import { StickyScrollRevealStom } from "./aceternityUI/StickScrollReaveal/StickyScrollRevealComponentStom";
+import { Helmet } from "react-helmet-async";
 // import styled from "styled-components";
 
 interface ComponentItem {
@@ -39,6 +40,12 @@ const Works = () => {
     //     />
     //   </div>
     <div className="h-full w-[99vw] dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative ">
+      <Helmet>
+        <title>kiyotomm</title>
+        <meta name="description" content="kiyotomm projects" />
+        <meta name="robots" content="homepage, react, seo" />
+        <link href="/works" />
+      </Helmet>
       {/* Radial gradient for the container to give a faded look */}
       <div className="absolute pointer-events-none inset-0   dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       {componentArr.map((arr) => (

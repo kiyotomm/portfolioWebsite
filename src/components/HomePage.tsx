@@ -3,12 +3,13 @@ import { TextGenerateEffectDemo } from "./aceternityUI/TextGenerateEffect/TextGe
 import { Helmet } from "react-helmet-async";
 
 const HomePage = () => {
+  2;
   return (
     <div className="h-[50rem] w-[99vw] dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center py-[] mt-10">
       <Helmet>
         <title>kiyotomm</title>
         <meta name="description" content="kiyotomm homepage" />
-        <meta name="keywords" content="homepage, react, seo" />
+        <meta name="robots" content="homepage, react, seo" />
         <link href="/" />
       </Helmet>
       {/* Radial gradient for the container to give a faded look */}
