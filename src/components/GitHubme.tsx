@@ -4,7 +4,7 @@ const GitHubme = () => {
   return (
     <Box>
       <a href="https://github.com/kiyotomm" target="_blank">
-        <Icon as={FaGithub} boxSize={{ base: "4.5vh", md: "2.5vh" }} />
+        <Icon as={FaGithub} boxSize={{ base: "4.5vh", md: "4.5vh" }} />
       </a>
     </Box>
   );

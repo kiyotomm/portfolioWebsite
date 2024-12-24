@@ -3,6 +3,7 @@
 import { Outlet } from "react-router-dom";
 import NavBar from "./NavBar";
 import { Box, VStack } from "@chakra-ui/react";
+import Footer from "./Footer";
 const Layout = () => {
   // const isWorksPage = location.pathname === "/worksPage";
   // const Wrapper = ({ children }: { children: React.ReactNode }) => {
@@ -36,6 +37,15 @@ const Layout = () => {
 
       <Box className="main">
         <Outlet />
+      </Box>
+      <Box
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        width="80vw"
+        height="20vh"
+      >
+        <Footer />
       </Box>
     </VStack>
   );
