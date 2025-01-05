@@ -3,6 +3,7 @@ import { Link } from "@chakra-ui/react";
 import { StickyScrollRevealNetImage } from "./aceternityUI/StickScrollReaveal/StickyScrollRevealComponentNetimage";
 import { StickyScrollRevealStom } from "./aceternityUI/StickScrollReaveal/StickyScrollRevealComponentStom";
 import { Helmet } from "react-helmet-async";
+import { StickyScrollRevealNetmovie } from "./aceternityUI/StickScrollReaveal/StickyScrollRevealComponentNetmovie";
 // import styled from "styled-components";
 
 interface ComponentItem {
@@ -26,6 +27,12 @@ const Works = () => {
       appName: "s-tom",
       appLink: "https://s-tom.vercel.app/",
     },
+    {
+      id: 3,
+      app: <StickyScrollRevealNetmovie />,
+      appName: "netmovie",
+      appLink: "https://netmovie-olive.vercel.app/",
+    },
   ];
 
   return (
@@ -48,7 +55,7 @@ const Works = () => {
       </Helmet>
       {/* Radial gradient for the container to give a faded look */}
       <div className="absolute pointer-events-none inset-0   dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-      {componentArr.map((arr) => (
+      {componentArr.reverse().map((arr) => (
         <div
           className="flex flex-col items-center my-[15vh] text-white    "
           key={arr.id}
