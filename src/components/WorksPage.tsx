@@ -45,7 +45,7 @@ const Works = () => {
       id: 5,
       app: <StickyScrollRevealGmacsteam />,
       appName: "G-Macsteam (Client Project)",
-      appLink: "https://www.gaijin-hub.com/",
+      appLink: "https://g-macsteam.com/",
     },
     {
       id: 5,
