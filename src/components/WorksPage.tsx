@@ -1,9 +1,11 @@
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Link } from "@chakra-ui/react";
-import { StickyScrollRevealNetImage } from "./aceternityUI/StickScrollReaveal/StickyScrollRevealComponentNetimage";
-import { StickyScrollRevealStom } from "./aceternityUI/StickScrollReaveal/StickyScrollRevealComponentStom";
+// import { StickyScrollRevealStom } from "./aceternityUI/StickScrollReaveal/StickyScrollRevealComponentStom";
 import { Helmet } from "react-helmet-async";
 import { StickyScrollRevealNetmovie } from "./aceternityUI/StickScrollReaveal/StickyScrollRevealComponentNetmovie";
+import { StickyScrollRevealGaijinHub } from "./aceternityUI/StickScrollReaveal/StickyScrollRevealComponentGaijin-Hub";
+import { StickyScrollRevealGmacsteam } from "./aceternityUI/StickScrollReaveal/StickyScrollRevealComponentG-macsteam";
+import { StickyScrollRevealDavaoena } from "./aceternityUI/StickScrollReaveal/StickyScrollRevealComponentDavaoena";
 // import styled from "styled-components";
 
 interface ComponentItem {
@@ -15,23 +17,41 @@ interface ComponentItem {
 
 const Works = () => {
   const componentArr: ComponentItem[] = [
-    {
-      id: 1,
-      app: <StickyScrollRevealNetImage />,
-      appName: "netimage",
-      appLink: "https://netimage.vercel.app/",
-    },
-    {
-      id: 2,
-      app: <StickyScrollRevealStom />,
-      appName: "s-tom",
-      appLink: "https://s-tom.vercel.app/",
-    },
+    // {
+    //   id: 1,
+    //   app: <StickyScrollRevealGaijinHub />,
+    //   appName: "netimage",
+    //   appLink: "https://netimage.vercel.app/",
+    // },
+    // {
+    //   id: 2,
+    //   app: <StickyScrollRevealStom />,
+    //   appName: "s-tom",
+    //   appLink: "https://s-tom.vercel.app/",
+    // },
     {
       id: 3,
       app: <StickyScrollRevealNetmovie />,
       appName: "netmovie",
       appLink: "https://netmovie-olive.vercel.app/",
+    },
+    {
+      id: 4,
+      app: <StickyScrollRevealGaijinHub />,
+      appName: "Gaijin-Hub",
+      appLink: "https://www.gaijin-hub.com/",
+    },
+    {
+      id: 5,
+      app: <StickyScrollRevealGmacsteam />,
+      appName: "G-Macsteam (Client Project)",
+      appLink: "https://www.gaijin-hub.com/",
+    },
+    {
+      id: 5,
+      app: <StickyScrollRevealDavaoena />,
+      appName: "Davaoeña (Client Project)",
+      appLink: "https://davaoena-kdb.vercel.app/en",
     },
   ];
 

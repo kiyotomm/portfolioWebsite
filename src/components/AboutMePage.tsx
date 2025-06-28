@@ -37,8 +37,8 @@ const AboutMePage = () => {
             Hi, I am currently learning software engineering <br />
             with a focus on web development.. I enjoy working on creative
             projects. <br />
-            Right now, I’m focused on learning java, and working towards my goal{" "}
-            <br />
+            Right now, I’m focused on learning Node.js, and working towards my
+            goal <br />
             of becoming a Full-Stack Developer. When I’m not studying, you can{" "}
             find me Driving a car. <br />
             Feel free to reach out if you’d like to{"  "}
