@@ -22,7 +22,7 @@ const content = [
   {
     title: "What is G-Macsteam?",
     description:
-      "G-Macsteam Ltd. is a furnace cleaning business based in Canada. owned by a Filipino business owner",
+      "G-Macsteam Ltd. is a furnace cleaning business based in Canada. owned by a Filipino business owner, it has more than 200 5 star review in google.",
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
         <img

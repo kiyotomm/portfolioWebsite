@@ -4,7 +4,8 @@ import image from "../../../Photos/workspage photos/netmovie/netmovie - Google C
 const content = [
   {
     title: "Movie Finder",
-    description: "Coming soon...",
+    description:
+      "A personal project where i learned routing, fetching efficiently and what a bad code is. code here is dirty.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--indigo-500),var(--purple-500))] flex items-center justify-center text-white">
         <img
