@@ -52,7 +52,7 @@ const content = [
   //     ),
   //   },
   {
-    title: "Next.js, Typescript, Shadcn UI, Supabase, Resend",
+    title: "Next.js, Typescript,Daisy UI",
     description: "",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
